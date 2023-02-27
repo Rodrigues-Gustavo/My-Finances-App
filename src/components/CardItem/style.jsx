@@ -7,30 +7,11 @@ export const Container = styled.div`
     background-color: #fff;
     border-radius: 0.3rem;
     padding: 0.3rem 0.9rem;
-    width: 30%;
-   
-    
-    /* @media (max-width: 750px) {
-        width: 20%;
-
-        p {
-            font-size: 0.8rem;
-        }
-
-        span {
-            font-size: 1.2rem;
-        }
-
-        svg {
-            display: none;
-        }
-    } */
+    width: 35%;
 
     @media (max-width: 750px) {
         width: 100%;
     }
-
-
 `;
 
 export const Header = styled.header`
@@ -45,17 +26,6 @@ export const Header = styled.header`
         width: 1.2rem;
         height: 1.2rem;
     }
-
-    /* @media (max-width: 750px) {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        svg {
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0.4rem;
-        }
-    } */
 `;
 
 export const HeaderTitle = styled.p`

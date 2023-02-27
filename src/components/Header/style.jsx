@@ -4,7 +4,7 @@ export const Container = styled.div`
     /* height: 150px; */
     height: 9.37rem;
     align-items: center;
-    background: rgb(0, 128, 128);
+    background: #8e04f6;
 `;
 
 export const Header = styled.h1``;

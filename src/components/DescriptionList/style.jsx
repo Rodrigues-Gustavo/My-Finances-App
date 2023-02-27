@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const Table = styled.table`
-width: 100%;
+width: 98%;
 background-color: #fff;
 padding: 1.2rem;
 box-shadow: 0px 0px 5px #ccc;
 border: 0.3rem;
 max-width: 1120px;
 margin: 1.2rem auto;
+border-radius: 0.3rem;
 `
 
 export const Thead = styled.thead``;

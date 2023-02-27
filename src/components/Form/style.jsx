@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     max-width: 1120px;
     margin: 1.2rem auto;
-    width: 100%;
+    width: 98%;
     background-color: #FFF;
     box-shadow: 0px 0px 5px #ccc;
     border-radius: 0.3rem;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     justify-content: space-around;
     padding: 1rem 0rem;
     gap: 0.6rem;
-
+    
     @media (max-width: 750px) {
         display: grid;
     }
@@ -31,6 +31,7 @@ export const Input = styled.input`
     padding: 0.3rem 0.6rem;
     font-size: 0.9rem;
     border: 1px solid #ccc;
+    margin-top: 0.3rem;
 `;
 
 export const RadioGroup = styled.div`
@@ -52,5 +53,5 @@ export const Button = styled.button`
     border-radius: 0.4rem;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0, 128, 128);
+    background-color: #8e04f6;
 `
