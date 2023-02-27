@@ -6,7 +6,7 @@ import { Form } from './components/Form'
 
 const App = () => {
   const data = localStorage.getItem("transactions");
-  const [transactionsList, setTransactionList] = useState(
+  const [transactionsList, setTransactionsList] = useState(
     data ? JSON.parse(data) : []
   );
   const [income, setIncome] = useState(0);
@@ -45,7 +45,7 @@ const App = () => {
       <GlobalStyles />
       <Header />
       <Card income={income} expense={expense} total={total} />
-      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionList={setTransactionList}/>
+      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
     </>
   )
 }
