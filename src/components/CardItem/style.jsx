@@ -42,8 +42,8 @@ export const Header = styled.header`
     margin: 1.2rem;
 
     svg {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.2rem;
+        height: 1.2rem;
     }
 
     /* @media (max-width: 750px) {

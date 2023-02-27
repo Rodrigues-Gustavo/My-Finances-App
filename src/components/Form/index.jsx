@@ -1,7 +1,8 @@
 import { useState } from "react"
+import  DescriptionList  from "../DescriptionList";
 import * as C from "./style"
 
-export const Form = ({ handleAdd }) => {
+export const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
     const [desc, setDesc] = useState("")
     const [amount, setAmount] = useState("");
     const [isExpense, setExpense] = useState(false);
@@ -63,6 +64,7 @@ export const Form = ({ handleAdd }) => {
             </C.RadioGroup>
             <C.Button onClick={handleSave}>ADICIONAR</C.Button>
         </C.Container>
+        <DescriptionList items={transactionsList} setItems={setTransactionsList} />
     </>
   );
-}
+};

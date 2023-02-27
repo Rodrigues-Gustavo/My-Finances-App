@@ -1,7 +1,13 @@
-import DescriptionListItem from '../DescriptionListItem'
+import  DescriptionListItem  from '../DescriptionListItem'
 import * as C from './style'
 
-export const DescriptionList = ({ items, setItems}) => {
+const DescriptionList = ({ items, setItems }) => {
+  const onDelete = (ID) => {
+    const newArray = items.filter((transaction) => transaction.id !== ID);
+    setItems(newArray);
+    localStorage.setItem("transactions", JSON.stringify(newArray));
+  };
+
   return (
     <C.Table>
       <C.Thead>
@@ -13,10 +19,12 @@ export const DescriptionList = ({ items, setItems}) => {
         </C.Tr>
       </C.Thead>
       <C.Tbody>
-        {items?.map((item,index) => (
-          <DescriptionListItem key={index} item={item}/>
+        {items?.map((item, index) => (
+          <DescriptionListItem key={index} item={item} onDelete={onDelete}/>
         ))}
       </C.Tbody>
     </C.Table>
   )
-}
+};
+
+export default DescriptionList

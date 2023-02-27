@@ -1,5 +1,19 @@
-export const index = () => {
+import * as C from './style';
+import { FaRegArrowAltCircleUp, FaRegArrowAltCircleDown, FaTrash } from 'react-icons/fa'
+
+const DescriptionListItem = ({ item, onDelete }) => {
   return (
-    <div>index</div>
+    <C.Tr>
+      <C.Td>{item.desc}</C.Td>
+      <C.Td>{item.amount}</C.Td>
+      <C.Td alignCenter>
+        {item.expense ? ( <FaRegArrowAltCircleDown color='red' />) : ( <FaRegArrowAltCircleUp color='green' /> )}
+      </C.Td>
+      <C.Td alignCenter>
+        <FaTrash onClick={() => onDelete(item.id)} />
+      </C.Td>
+    </C.Tr>
   )
-}
+};
+
+export default DescriptionListItem;

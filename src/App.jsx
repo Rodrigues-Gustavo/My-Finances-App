@@ -4,8 +4,6 @@ import { Header } from './components/Header'
 import { Card } from './components/Card'
 import { Form } from './components/Form'
 
-
-
 const App = () => {
   const data = localStorage.getItem("transactions");
   const [transactionsList, setTransactionList] = useState(
@@ -47,7 +45,7 @@ const App = () => {
       <GlobalStyles />
       <Header />
       <Card income={income} expense={expense} total={total} />
-      <Form handleAdd={handleAdd} />
+      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionList={setTransactionList}/>
     </>
   )
 }
