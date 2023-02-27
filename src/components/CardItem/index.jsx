@@ -1,6 +1,13 @@
+import * as C from './style'
 
-export const CardItem = () => {
+export const CardItem = ({ title, Icon, value }) => {
   return (
-    <div>CardItem</div>
+    <C.Container>
+      <C.Header>
+        <C.HeaderTitle>{title}</C.HeaderTitle>
+        <Icon />
+      </C.Header>
+      <C.Total>{value}</C.Total>
+    </C.Container>
   )
 }
